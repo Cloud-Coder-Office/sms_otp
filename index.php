@@ -81,10 +81,10 @@
 							$user = $_POST['user'];
 							$password = sha1($_POST['password']);
 							$sql = "SELECT * FROM admin WHERE admin_name = '$user' AND password = '$password'";
-							$query = mysql_query($sql);
-							$results =  mysql_num_rows($query);
+							$query = mysqli_query($con,$sql);
+							$results =  mysqli_num_rows($query);
 							if($results == TRUE){								
-								while($row = mysql_fetch_assoc($query)){
+								while($row = mysqli_fetch_assoc($query)){
 									$_SESSION['ADMIN'] = "ADMIN";
 									$_SESSION['NAME'] =	$row['admin_name'];
 									$_SESSION['ACCESS'] = true;

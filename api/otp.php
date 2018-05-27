@@ -49,13 +49,13 @@
 			 $flag = false;
 			 $sql = "SELECT incomming_string, outgoing_string, status FROM otp_string WHERE status ='1'";
  
-			$query = mysql_query($sql) or die (mysql_error());
+			$query = mysqli_query($con,$sql) or die (mysqli_error());
  
 			if($query === FALSE) { 
-					die(mysql_error()); // TODO: better error handling
+					die(mysqli_error()); // TODO: better error handling
 				}
 	 
-			 While(@$row = mysql_fetch_array($query)){
+			 While(@$row = mysqli_fetch_array($query)){
 				 
 				 $incomming_string = $row['incomming_string'];
 				 $outgoing_string  = $row['outgoing_string'];
@@ -78,13 +78,13 @@
 					
 				
 			$sql = "SELECT * FROM user";
-			$query  = mysql_query($sql) or die (mysql_error());
+			$query  = mysqli_query($con,$sql) or die (mysqli_error());
 			
 			if (!$query)
 			    {
-                 die(mysql_error());
+                 die(mysqli_error());
 		        }
-			while($row = @mysql_fetch_assoc($query)){
+			while($row = @mysqli_fetch_assoc($query)){
 			
 			$id  = $row['id'];
 			$pas = $row['password'];
@@ -98,8 +98,8 @@
 						}
 			$str =  substr("$numbers[$i]", 0,5);
 			   $sql = "SELECT * FROM user_route_api WHERE user_id = $username AND route_id = 1 AND status = 1";
-					$query  = mysql_query($sql) or die (mysql_error());
-					While ($row = mysql_fetch_assoc($query)){
+					$query  = mysqli_query($con,$sql) or die (mysqli_error());
+					While ($row = mysqli_fetch_assoc($query)){
 							$api_one_capacity = $row['capacity'];
 							$api_one_count = $row['count'];
 							$api_one_sent = $row['total_send'];
@@ -108,16 +108,16 @@
 					}
 					
 					$sql = "SELECT * FROM user_route_api WHERE user_id = $username AND route_id = 2 AND status = 1";
-						$query  = mysql_query($sql) or die (mysql_error());
-						While ($row = mysql_fetch_assoc($query)){
+						$query  = mysqli_query($con,$sql) or die (mysqli_error());
+						While ($row = mysqli_fetch_assoc($query)){
 						$api_two_capacity = $row['capacity'];
 						$api_two_count = $row['count'];
 						$api_two_sent = $row['total_send'];
 						$api_two_status = $row['status'];
 					}
 					$sql_for_pc_one = "SELECT route_api.route,route_api.route_capacity,user_route_api.id,user_route_api.user_id,user_route_api.route_id,user_route_api.capacity,user_route_api.total_send, SUM(user_route_api.total_send) as route_one_total_send FROM route_api INNER JOIN user_route_api ON route_api.route = user_route_api.route_id WHERE user_route_api.route_id = 1";
-					$query = mysql_query($sql_for_pc_one) or die(mysql_error());
-						While ($row = mysql_fetch_assoc($query))
+					$query = mysqli_query($con,$sql_for_pc_one) or die(mysqli_error());
+						While ($row = mysqli_fetch_assoc($query))
 							{
 								$route_one_total_send = $row['route_one_total_send'];
 								$route_one_capacity = $row['route_capacity'];
@@ -125,15 +125,15 @@
 							}
 		
 				$sql_for_pc_two = "SELECT route_api.route,route_api.route_capacity,user_route_api.id,user_route_api.user_id,user_route_api.route_id,user_route_api.capacity,user_route_api.total_send, SUM(user_route_api.total_send) as route_two_total_send FROM route_api INNER JOIN user_route_api ON route_api.route = user_route_api.route_id WHERE user_route_api.route_id = 2";
-				$query = mysql_query($sql_for_pc_two) or die(mysql_error());
-					While ($row = mysql_fetch_assoc($query))
+				$query = mysqli_query($con,$sql_for_pc_two) or die(mysqli_error());
+					While ($row = mysqli_fetch_assoc($query))
 						{
 							$route_two_total_send = $row['route_two_total_send'];
 							$route_two_capacity = $row['route_capacity'];
 						}
 				$sql_for_uc ="SELECT user.id,user.user_capacity, user_route_api.id,user_route_api.user_id,user_route_api.total_send, SUM(user_route_api.total_send) as user_total_send FROM user INNER JOIN user_route_api ON user.id = user_route_api.user_id WHERE user_route_api.user_id =$username";
-				$query = mysql_query($sql_for_uc);
-				While($row = mysql_fetch_assoc($query))
+				$query = mysqli_query($con,$sql_for_uc);
+				While($row = mysqli_fetch_assoc($query))
 					{
 						$user_total_send = $row['user_total_send'];
 						$user_total_capacity = $row['user_capacity'];
@@ -173,13 +173,13 @@
 						$api_one_count  = $api_one_count + 1;
 						$api_one_sent   = $api_one_sent+1;
 						$sql = "UPDATE user_route_api SET count = $api_one_count WHERE route_id=1 AND user_id = $username AND status = 1";
-						$query = mysql_query($sql)  or die (mysql_error());
+						$query = mysqli_query($con,$sql)  or die (mysqli_error());
 						
 						$update = "UPDATE user_route_api SET total_send = $api_one_sent WHERE route_id = 1 AND user_id =$username AND status =1";
-						$query_one = mysql_query($update) or die (mysql_error());
+						$query_one = mysqli_query($con,$update) or die (mysqli_error());
 						
 						  $sql = "INSERT INTO otp_message_report (incomming_string 	,outgoing_string,phone_no,user_id,route_id,date ) VALUES ('$incomming_string','$msg','$numbers[$i]','$username','1', NOW())";
-						 $query = mysql_query($sql) or die (mysql_error());
+						 $query = mysqli_query($con,$sql) or die (mysqli_error());
 						 
 					} else{
 						 echo $api_one_sent;
@@ -204,13 +204,13 @@
 											$api_two_count  = $api_two_count+1;
 							                $api_two_sent = $api_two_sent+1;
 											$sql = "UPDATE user_route_api SET count = $api_two_count WHERE route_id='2' AND user_id = $username AND status = 1";
-											$query = mysql_query($sql)  or die (mysql_error());
+											$query = mysqli_query($con,$sql)  or die (mysqli_error());
 											
 										    $update = "UPDATE user_route_api SET total_send = $api_two_sent WHERE route_id = '2' AND user_id =$username AND status =1";
-											$query_one = mysql_query($update) or die (mysql_error());
+											$query_one = mysqli_query($update) or die (mysqli_error());
 											
 											 $sql = "INSERT INTO otp_message_report (incomming_string 	,outgoing_string,phone_no,user_id,route_id,date ) VALUES ('$incomming_string','$msg','$numbers[$i]','$username','2', NOW())";
-										 	 $query = mysql_query($sql) or die (mysql_error());
+										 	 $query = mysqli_query($con,$sql) or die (mysqli_error());
 											 
 											 }
 									
@@ -220,9 +220,9 @@
 					 }
 						if($api_two_count == $api_two_capacity){
 							   $sql = "UPDATE user_route_api SET count = '0' WHERE route_id='1' AND user_id = $username AND status ='1'";
-							    $query = mysql_query($sql) or die(mysql_error());
+							    $query = mysqli_query($con,$sql) or die(mysqli_error());
 							    $sql = "UPDATE user_route_api SET count = '0' WHERE route_id='2' AND user_id = $username AND status ='1'";
-							    $query = mysql_query($sql) or die(mysql_error());
+							    $query = mysqli_query($con,$sql) or die(mysqli_error());
 								$i = $i-1;
 								continue;
 						}

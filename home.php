@@ -5,17 +5,17 @@
 
 <?php 
 require_once "class/control_view.php";
-$total_sent = total_report();
-$total_count = mysql_fetch_assoc($total_sent);
+$total_sent = total_report($con);
+$total_count = mysqli_fetch_assoc($total_sent);
 
-$daily_sent = daily_report();
-$daily_count = mysql_fetch_assoc($daily_sent);
+$daily_sent = daily_report($con);
+$daily_count = mysqli_fetch_assoc($daily_sent);
 
-$last_week = view_last_week();
-$last_week_count = mysql_fetch_assoc($last_week);
+$last_week = view_last_week($con);
+$last_week_count = mysqli_fetch_assoc($last_week);
 
-$last_mont = view_last_month();
-$last_month_count = mysql_fetch_array($last_mont);
+$last_mont = view_last_month($con);
+$last_month_count = mysqli_fetch_array($last_mont);
 ?>
 <!-- start: Content -->
 

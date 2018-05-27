@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b69b81c-695c-49b1-a7f9-7d6198a622d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/receive_api.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_user.php" afterPath="$PROJECT_DIR$/add_user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/otp.php" afterPath="$PROJECT_DIR$/api/otp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/config.php" afterPath="$PROJECT_DIR$/class/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/control_view.php" afterPath="$PROJECT_DIR$/class/control_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,31 +16,63 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="otp.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/otp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="162" column="0" lean-forward="true" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
               <folding>
-                <marker date="1527418823368" expanded="true" signature="1971:2053" ph="SELECT incom... otp_string" />
-                <marker date="1527418823368" expanded="true" signature="2878:2896" ph="SELECT * FRO... user" />
-                <marker date="1527418823368" expanded="true" signature="3356:3442" ph="SELECT * FRO... user_route_api" />
-                <marker date="1527418823368" expanded="true" signature="3751:3837" ph="SELECT * FRO... user_route_api" />
-                <marker date="1527418823368" expanded="true" signature="4141:4479" ph="SELECT route... route_api" />
-                <marker date="1527418823368" expanded="true" signature="4764:5102" ph="SELECT route... route_api" />
-                <marker date="1527418823368" expanded="true" signature="5364:5619" ph="SELECT user.... user" />
-                <marker date="1527418823368" expanded="true" signature="6963:7067" ph="UPDATE user_... " />
-                <marker date="1527418823368" expanded="true" signature="7152:7260" ph="UPDATE user_... " />
-                <marker date="1527418823368" expanded="true" signature="7350:7523" ph="INSERT INTO otp_message_report... " />
-                <marker date="1527418823368" expanded="true" signature="8361:8467" ph="UPDATE user_... " />
-                <marker date="1527418823368" expanded="true" signature="8570:8680" ph="UPDATE user_... " />
-                <marker date="1527418823368" expanded="true" signature="8784:8957" ph="INSERT INTO otp_message_report... " />
-                <marker date="1527418823368" expanded="true" signature="9173:9269" ph="UPDATE user_... " />
-                <marker date="1527418823368" expanded="true" signature="9352:9448" ph="UPDATE user_... " />
+                <marker date="1527437967938" expanded="true" signature="1971:2053" ph="SELECT incom... otp_string" />
+                <marker date="1527437967938" expanded="true" signature="2887:2905" ph="SELECT * FRO... user" />
+                <marker date="1527437967938" expanded="true" signature="3374:3460" ph="SELECT * FRO... user_route_api" />
+                <marker date="1527437967938" expanded="true" signature="3777:3863" ph="SELECT * FRO... user_route_api" />
+                <marker date="1527437967938" expanded="true" signature="4175:4513" ph="SELECT route... route_api" />
+                <marker date="1527437967938" expanded="true" signature="4806:5144" ph="SELECT route... route_api" />
+                <marker date="1527437967938" expanded="true" signature="5414:5669" ph="SELECT user.... user" />
+                <marker date="1527437967938" expanded="true" signature="7020:7124" ph="UPDATE user_... " />
+                <marker date="1527437967938" expanded="true" signature="7216:7324" ph="UPDATE user_... " />
+                <marker date="1527437967938" expanded="true" signature="7421:7594" ph="INSERT INTO otp_message_report... " />
+                <marker date="1527437967938" expanded="true" signature="8439:8545" ph="UPDATE user_... " />
+                <marker date="1527437967938" expanded="true" signature="8655:8765" ph="UPDATE user_... " />
+                <marker date="1527437967938" expanded="true" signature="8871:9044" ph="INSERT INTO otp_message_report... " />
+                <marker date="1527437967938" expanded="true" signature="9267:9363" ph="UPDATE user_... " />
+                <marker date="1527437967938" expanded="true" signature="9453:9549" ph="UPDATE user_... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1527435669290" expanded="true" signature="2492:2565" ph="SELECT * FRO... admin" />
+                <marker date="1527435669290" expanded="false" signature="3108:3130" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -46,8 +80,8 @@
       <file leaf-file-name="receive_api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/receive_api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="203">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -56,16 +90,34 @@
       <file leaf-file-name="add_user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add_user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="3519">
               <caret line="207" column="11" lean-forward="false" selection-start-line="207" selection-start-column="11" selection-end-line="207" selection-end-column="11" />
-              <folding>
-                <marker date="1527414857493" expanded="true" signature="6236:6312" ph="SELECT SUM(t... user_route_api" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mysql_query($sql</find>
+      <find>mysql</find>
+      <find>mysqli_</find>
+      <find>quer</find>
+      <find>mysql_query($sql);</find>
+      <find>tofa</find>
+      <find>mysqli_query($sql)</find>
+      <find>mysql_</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>mysqli_query($con,$sql</replace>
+      <replace>mysqli_query($sql);</replace>
+      <replace>mysqli_query($con,$sql);</replace>
+      <replace>mysqli_`</replace>
+      <replace>mysqli_query($con,$sql)</replace>
+      <replace>mysqli_</replace>
+    </replaceStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
@@ -76,14 +128,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/add_user.php" />
         <option value="$PROJECT_DIR$/api/receive_api.php" />
+        <option value="$PROJECT_DIR$/class/config.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/class/control_view.php" />
+        <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/api/otp.php" />
       </list>
     </option>
@@ -119,36 +172,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sms_otp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sms_otp" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sms_otp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sms_otp" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sms_otp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sms_otp" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sms_otp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sms_otp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,6 +209,14 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
       <method />
@@ -206,9 +255,6 @@
       <PhpTestRunnerSettings />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -241,37 +287,39 @@
       <option name="presentableId" value="Default" />
       <updated>1527411936200</updated>
       <workItem from="1527411937626" duration="4829000" />
+      <workItem from="1527435144748" duration="2078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4829000" />
+    <option name="totallyTimeSpent" value="6907000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1376" height="754" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1992647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -281,19 +329,33 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/add_user.php">
+    <entry file="file://$PROJECT_DIR$/api/otp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="207" column="11" lean-forward="false" selection-start-line="207" selection-start-column="11" selection-end-line="207" selection-end-column="11" />
+        <state relative-caret-position="2754">
+          <caret line="162" column="0" lean-forward="true" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
           <folding>
-            <marker date="1527414857493" expanded="true" signature="6236:6312" ph="SELECT SUM(t... user_route_api" />
+            <marker date="1527437967938" expanded="true" signature="1971:2053" ph="SELECT incom... otp_string" />
+            <marker date="1527437967938" expanded="true" signature="2887:2905" ph="SELECT * FRO... user" />
+            <marker date="1527437967938" expanded="true" signature="3374:3460" ph="SELECT * FRO... user_route_api" />
+            <marker date="1527437967938" expanded="true" signature="3777:3863" ph="SELECT * FRO... user_route_api" />
+            <marker date="1527437967938" expanded="true" signature="4175:4513" ph="SELECT route... route_api" />
+            <marker date="1527437967938" expanded="true" signature="4806:5144" ph="SELECT route... route_api" />
+            <marker date="1527437967938" expanded="true" signature="5414:5669" ph="SELECT user.... user" />
+            <marker date="1527437967938" expanded="true" signature="7020:7124" ph="UPDATE user_... " />
+            <marker date="1527437967938" expanded="true" signature="7216:7324" ph="UPDATE user_... " />
+            <marker date="1527437967938" expanded="true" signature="7421:7594" ph="INSERT INTO otp_message_report... " />
+            <marker date="1527437967938" expanded="true" signature="8439:8545" ph="UPDATE user_... " />
+            <marker date="1527437967938" expanded="true" signature="8655:8765" ph="UPDATE user_... " />
+            <marker date="1527437967938" expanded="true" signature="8871:9044" ph="INSERT INTO otp_message_report... " />
+            <marker date="1527437967938" expanded="true" signature="9267:9363" ph="UPDATE user_... " />
+            <marker date="1527437967938" expanded="true" signature="9453:9549" ph="UPDATE user_... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/receive_api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
+        <state relative-caret-position="391">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
@@ -307,26 +369,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/add_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3519">
+          <caret line="207" column="11" lean-forward="false" selection-start-line="207" selection-start-column="11" selection-end-line="207" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/dbcontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="38" column="2" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/control_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="108" column="2" lean-forward="true" selection-start-line="108" selection-start-column="2" selection-end-line="108" selection-end-column="2" />
+          <folding>
+            <marker date="1527436328766" expanded="true" signature="106:141" ph="SELECT * FRO... user" />
+            <marker date="1527436328766" expanded="true" signature="256:297" ph="SELECT * FRO... otp_string" />
+            <marker date="1527436328766" expanded="true" signature="406:607" ph="SELECT user.... user" />
+            <marker date="1527436328766" expanded="true" signature="716:985" ph="SELECT route... route_api" />
+            <marker date="1527436328766" expanded="true" signature="1119:1149" ph="SELECT * FRO... user" />
+            <marker date="1527436328766" expanded="true" signature="1296:1334" ph="SELECT * FRO... route_api" />
+            <marker date="1527436328766" expanded="true" signature="1472:1551" ph="SELECT route... route_api" />
+            <marker date="1527436328766" expanded="true" signature="1685:2044" ph="SELECT user_... user" />
+            <marker date="1527436328766" expanded="true" signature="2719:3105" ph="SELECT user_... user" />
+            <marker date="1527436328766" expanded="true" signature="3246:3307" ph="SELECT name,... user_control" />
+            <marker date="1527436328766" expanded="true" signature="3443:3494" ph="SELECT COUNT... message_report" />
+            <marker date="1527436328766" expanded="true" signature="3621:3736" ph="SELECT COUNT... message_report" />
+            <marker date="1527436328766" expanded="true" signature="3863:3974" ph="SELECT COUNT... message_report" />
+            <marker date="1527436328766" expanded="true" signature="4102:4215" ph="SELECT COUNT... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1527435669290" expanded="true" signature="2492:2565" ph="SELECT * FRO... admin" />
+            <marker date="1527435669290" expanded="false" signature="3108:3130" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/receive_api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/otp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="162" column="0" lean-forward="true" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
           <folding>
-            <marker date="1527418823368" expanded="true" signature="1971:2053" ph="SELECT incom... otp_string" />
-            <marker date="1527418823368" expanded="true" signature="2878:2896" ph="SELECT * FRO... user" />
-            <marker date="1527418823368" expanded="true" signature="3356:3442" ph="SELECT * FRO... user_route_api" />
-            <marker date="1527418823368" expanded="true" signature="3751:3837" ph="SELECT * FRO... user_route_api" />
-            <marker date="1527418823368" expanded="true" signature="4141:4479" ph="SELECT route... route_api" />
-            <marker date="1527418823368" expanded="true" signature="4764:5102" ph="SELECT route... route_api" />
-            <marker date="1527418823368" expanded="true" signature="5364:5619" ph="SELECT user.... user" />
-            <marker date="1527418823368" expanded="true" signature="6963:7067" ph="UPDATE user_... " />
-            <marker date="1527418823368" expanded="true" signature="7152:7260" ph="UPDATE user_... " />
-            <marker date="1527418823368" expanded="true" signature="7350:7523" ph="INSERT INTO otp_message_report... " />
-            <marker date="1527418823368" expanded="true" signature="8361:8467" ph="UPDATE user_... " />
-            <marker date="1527418823368" expanded="true" signature="8570:8680" ph="UPDATE user_... " />
-            <marker date="1527418823368" expanded="true" signature="8784:8957" ph="INSERT INTO otp_message_report... " />
-            <marker date="1527418823368" expanded="true" signature="9173:9269" ph="UPDATE user_... " />
-            <marker date="1527418823368" expanded="true" signature="9352:9448" ph="UPDATE user_... " />
+            <marker date="1527437967938" expanded="true" signature="1971:2053" ph="SELECT incom... otp_string" />
+            <marker date="1527437967938" expanded="true" signature="2887:2905" ph="SELECT * FRO... user" />
+            <marker date="1527437967938" expanded="true" signature="3374:3460" ph="SELECT * FRO... user_route_api" />
+            <marker date="1527437967938" expanded="true" signature="3777:3863" ph="SELECT * FRO... user_route_api" />
+            <marker date="1527437967938" expanded="true" signature="4175:4513" ph="SELECT route... route_api" />
+            <marker date="1527437967938" expanded="true" signature="4806:5144" ph="SELECT route... route_api" />
+            <marker date="1527437967938" expanded="true" signature="5414:5669" ph="SELECT user.... user" />
+            <marker date="1527437967938" expanded="true" signature="7020:7124" ph="UPDATE user_... " />
+            <marker date="1527437967938" expanded="true" signature="7216:7324" ph="UPDATE user_... " />
+            <marker date="1527437967938" expanded="true" signature="7421:7594" ph="INSERT INTO otp_message_report... " />
+            <marker date="1527437967938" expanded="true" signature="8439:8545" ph="UPDATE user_... " />
+            <marker date="1527437967938" expanded="true" signature="8655:8765" ph="UPDATE user_... " />
+            <marker date="1527437967938" expanded="true" signature="8871:9044" ph="INSERT INTO otp_message_report... " />
+            <marker date="1527437967938" expanded="true" signature="9267:9363" ph="UPDATE user_... " />
+            <marker date="1527437967938" expanded="true" signature="9453:9549" ph="UPDATE user_... " />
           </folding>
         </state>
       </provider>
