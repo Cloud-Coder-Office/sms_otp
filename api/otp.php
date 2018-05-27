@@ -160,7 +160,7 @@
 						
 						$msgInfo = json_encode($messageBody);
 						$data = ["http://portal1.smsgatewaysolution.com/sms/smshttpapi.php?u=".$userName."&p=".$password."&h=".$msgInfo];
-					   
+
 					   $r = multiRequest($data);
 					   //echo $r[0]." and number".$number[$i]."<br/>";
 					
